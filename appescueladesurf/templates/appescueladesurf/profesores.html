@@ -1,0 +1,18 @@
+{% extends "appescueladesurf/padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<h2>Profesores</h2>
+<hr><hr>
+<ul>
+    {% for profesores in profesores %}
+        <li>
+            profesor/a: {{profesores.nombre}} {{profesores.apellido}}
+                -- email: {{profesores.email}}
+
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "appescueladesurf/padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+    
+    
+    
+    
+    <h2>El numero del alumno {{numeroalumno}} es: <h2>
+
+    {% if alumno %}
+
+
+    <ul>
+
+    {% for x in alumnno %}
+
+        <li>{{x.nombre}}</li>
+        <li>{{x.numeroalumno}}</li>
+
+    {% endfor %}
+
+
+    </ul>
+
+    {% else %}
+    <p>No hay datos con esa descripcion</p>
+
+    {% endif %}
+
+    <p style="color:red;">{{respuesta}}</p>
+
+
+{% endblock %}
